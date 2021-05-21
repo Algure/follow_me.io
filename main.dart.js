@@ -10948,15 +10948,17 @@ _.a=0
 _.c=_.b=null},
 Bn:function Bn(){},
 PL:function PL(){},
-azK:function(a){var s,r,q,p,o=J.at(a),n=H.u5(o.h(a,"key")),m=H.u5(o.h(a,"code"))
-if(m==null)m=""
-s=n==null?"":n
-r=H.SY(o.h(a,"metaState"))
-q=new A.a2O(m,s,r==null?0:r)
-p=H.cc(o.h(a,"type"))
-switch(p){case"keydown":return new B.nB(q)
-case"keyup":return new B.xt(q)
-default:throw H.b(U.vJ("Unknown key event type: "+p))}},
+azK:function(a){var s,r,q,p,o,n=J.at(a),m=H.u5(n.h(a,"key")),l=H.u5(n.h(a,"code"))
+if(l==null)l=""
+s=m==null
+r=s?"":m
+q=H.SY(n.h(a,"metaState"))
+p=new A.a2O(l,r,q==null?0:q)
+!s
+o=H.cc(n.h(a,"type"))
+switch(o){case"keydown":return new B.nB(p)
+case"keyup":return new B.xt(p)
+default:throw H.b(U.vJ("Unknown key event type: "+o))}},
 n4:function n4(a){this.b=a},
 f2:function f2(a){this.b=a},
 a2L:function a2L(){},
@@ -26096,6 +26098,7 @@ dO:function(a){this.a.pop()},
 MH:function(a,b){if(!$.ap2){$.ap2=!0
 $.c2().$1("The performance overlay isn't supported on the web")}},
 MI:function(a,b,c,d){var s,r
+c
 t.S9.a(b)
 s=b.a.b
 r=new H.fJ(null)
@@ -75733,4 +75736,3 @@ a(b.target)}for(var r=0;r<s.length;++r)s[r].addEventListener("load",onLoad,false
 var s=F.aha
 if(typeof dartMainRunner==="function")dartMainRunner(s,[])
 else s([])})})()
-//# sourceMappingURL=main.dart.js.map
